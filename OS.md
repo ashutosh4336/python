@@ -28,14 +28,10 @@ print(dir(os))
 
 ### Create a Directory
 
-````
-
+```
 os.makedirs('osMod/videoOne')
-
 --> Can't directory inside a directory
-
 os.makedir('osMod')
-
 ```
 
 ### Delete a Directory
@@ -60,21 +56,17 @@ print(datetime.fromtimestamp(modTime)) [DateTime Module is Needed]
 ```
 
 for dirpath, dirname, filename, in os.walk(os.getcwd()):
-print('dirpath --> {}'.format(dirpath))
-print('dirname --> {}'.format(dirname))
-print('Filename --> {}'.format(filename))
-print(' ')
-print(' ')
+    print('dirpath --> {}'.format(dirpath))
+    print('dirname --> {}'.format(dirname))
+    print('Filename --> {}'.format(filename))
+    print(' ')
+    print(' ')
 
 ```
 
 ### Console Env Variables
 
-```
-
-print(os.environ.get('GOPATH'))
-
-```
+`print(os.environ.get('GOPATH'))`
 
 ### Creating a Document (Text) File with the ENV path and NAME
 
@@ -98,51 +90,30 @@ f.write(os.environ.get('GOPATH') + '\n')
 
 ### Print File name
 
-```
-
-print(os.path.basename('/home/ashutosh/Desktop/go.txt'))
-
-```
+`print(os.path.basename('/home/ashutosh/Desktop/go.txt'))`
 
 ### Print Directory Path containing the file
 
-```
-
-print(os.path.dirname('/home/ashutosh/Desktop/go.txt'))
-
-```
+`print(os.path.dirname('/home/ashutosh/Desktop/go.txt'))`
 
 ### Print Direct and File Name Separately in a Tuple
 
-```
-
-print(os.path.split('/home/ashutosh/Desktop/go.txt'))
-
-```
+`print(os.path.split('/home/ashutosh/Desktop/go.txt'))`
 
 ### Check if File Exist or Not
 
-```
-
-print(os.path.exists('/home/ashutosh/Desktop/go.txt'))
-
-```
+`print(os.path.exists('/home/ashutosh/Desktop/go.txt'))`
 
 ### Check the input data is a Directory or File
 
 ```
-
 print(os.path.isdir('/home/ashutosh/Desktop/go.txt'))
 print(os.path.isfile('/home/ashutosh/Desktop/go.txt'))
 
 ```
 
 ```
-
 print(os.path.splitext('/home/ashutosh/Desktop/go.txt'))
 Output : ('/home/ashutosh/Desktop/go', '.txt')
 
 ```
-
-```
-````

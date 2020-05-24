@@ -1,5 +1,5 @@
 # ZIP Module
-* Type of ZIP files
+Type of ZIP files
 	* zip: 	ZIP file
 	* tar: 	Uncompressed tar File
 	* gztar:  gzip'ed tar file

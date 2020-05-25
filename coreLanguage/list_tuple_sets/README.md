@@ -1,12 +1,17 @@
 # Python
+
 ### Python Lists
+
 Python `Lists` are identical as JavaScript `Array`
+
 ```
 language = ['JavaScript', 'Python', 'Clojure', 'Rust', 'C']
 framework = ['React', 'Angular', 'Vue', 'Django', 'PyTorch']
 nums = [5, 6, 9, 5, 6, 6, 56, 87, 96, 98]
 ```
+
 ### List Methods
+
 ```courses.append('React')
 courses.insert(0, 'React')
 language.extend(framework)
@@ -42,7 +47,9 @@ print(newlist)
 print(language)
 print(nums)
 ```
+
 ### Python Dictionaries
+
 ```
 students = {
     'name': 'Ashutosh',
@@ -85,6 +92,7 @@ language = ('JavaScript', 'Python', 'Clojure', 'Rust', 'C')
 ```
 
 ### Sets
+
 ```
 language = {'JavaScript', 'Python', 'Clojure', 'Rust', 'C'}
 morelanguage = {'JavaScript', 'Java', 'Ruby', 'PHP', 'C++', 'Python'}
@@ -95,48 +103,47 @@ print(morelanguage.union(language))
 ```
 
 ### Dictionaries
+
 Python `Dictionaries` are identical as JavaScript `Object`
 
 ### Creating Empty `Dictionaries`, `Lists`, `Sets`, `Tuple`
 
 #### Empty Dictionaries
+
 ```
 emptydict = {}
 ```
 
 #### Empty Lists
+
 ```
 emptylist = []
 emptylist = list()
 ```
 
 #### Empty Tuples
+
 ```
 emptytuple = ()
 emptytuple = tuple()
 ```
 
 #### Empty Tuples
+
 ```
 emptyset = set()
 ```
+
 ## Conditionals and Booleans
+
 ### If, Else, and Elif Statements
 
-|----------------------|----------|
-|  Comparison          |  Symbol  |
-|----------------------|----------|
-|  Equal:              |    ==    |
-|----------------------|----------|
-|  Not Equal           |    !=    |
-|----------------------|----------|
-|  Greater Than        |    >     |
-|----------------------|----------|
-|  Less Than           |    <     |
-|----------------------|----------|
-|  Grater or Equal     |    >=    |
-|----------------------|----------|
-|  Less or Equal       |    <=    |
-|----------------------|----------|
-|  Object Identity     |    is    |
-|----------------------|----------|
+| Comparison      | Symbol |
+| --------------- | ------ |
+| Equal:          | ==     |
+| Not Equal       | !=     |
+| Greater Than    | >      |
+| Less Than       | <      |
+| Grater or Equal | >=     |
+| Less or Equal   | <=     |
+| Object Identity | is     |

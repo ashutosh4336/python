@@ -99,22 +99,3 @@
 #
 # print(students)
 # print(age)
-
-'''
-Comparison
-Equal:              ==
-Not Equal           !=
-Greater Than        >
-Less Than           <
-Grater or Equal     >=
-Less or Equal       <=
-Object Identity     is
-'''
-
-
-lang = 'Python'
-
-if lang == 'Python':
-    print('We\'re Learning Python ')
-else:
-    print('Condition is False')

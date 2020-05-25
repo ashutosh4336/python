@@ -147,3 +147,81 @@ emptyset = set()
 | Grater or Equal | >=     |
 | Less or Equal   | <=     |
 | Object Identity | is     |
+
+### Oprations
+```
+and
+or
+not
+```
+Loops Example ```if, elif, else```
+```
+lang = 'Python'
+
+if lang == 'JavaScript':
+    print('We\'re Learning JavaScript')
+elif lang == 'PHP':
+    print('We\'re Learning PHP')
+else:
+    print('Unknown Language')
+```
+
+`is` Comparison
+
+`is` False Case
+```
+a = [1, 2, 3]
+b = [1, 2, 3]
+
+print(a == b)   # return True
+print(a is b)   # return False
+
+print(id(a))
+print(id(b))
+```
+`is` True Case
+```
+a = [1, 2, 3]
+a = b
+
+print(a == b) # return True
+print(a is b) # return True
+
+# Both id of a and b will be same
+
+print(id(a))
+print(id(b))
+```
+
+Logical Operation ```and, or, not```
+```
+user = 'Admin'
+loggedin = False
+
+if user == 'Admin' or loggedin:
+   print('Authorized User')
+else:
+   print('Unauthorized user')
+```
+```
+if not loggedin:
+    print('Please login')
+else:
+    print('Welcome Admin')
+```
+False values:
+
+        False
+        None
+        Zero of any numeric type
+        Any empty sequency. eg - [], (), ''
+        Any empty mapping. eg - {}
+
+```
+condition = []
+
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluated to False')
+```

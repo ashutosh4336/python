@@ -20,36 +20,48 @@ dbinstance = client.get_database('pyapp')
 
 collection = dbinstance.get_collection('users')
 
-# Get the total No number of Documens as per parsed filetr
-count = collection.count_documents({})
+
 # document = []
 # document.append({
-#     'name': 'Sonam Chaubey',
+#     'name': 'Divya Tyagi',
 #     'age': 24,
-#     'city': 'Jabalpur',
-#     'occuption': 'Intern',
-#     'technology': 'Javascript'
+#     'city': 'Jammu Kashmir',
+#     'occuption': 'Software Developer',
+#     'technology': 'MERN Stack'
 # })
 #
 # document.append({
-#     'name': 'Ashutosh Panda',
-#     'age': 21,
-#     'city': 'Bhubaneswar',
-#     'occuption': 'Intern',
-#     'technology': 'MEAN Stack'
+#     'name': 'Amit Khanduri',
+#     'age': 89,
+#     'city': 'Africa',
+#     'occuption': 'Peon',
+#     'technology': 'Admin'
 # })
 
-# response = collection.insert_many(document)
 
+# Filter
 # filter = {
 #     'technology': 'MEAN Stack'
 # }
-filter = {
-    'name': 'Ashutosh Panda'
-}
 
-response = collection.find(filter)
+# filter = {
+#     'name': 'Ashutosh Panda'
+# }
+
+# response = collection.insert_many(document)
+# response = collection.find()
+# response = collection.find().sort('age', 1)
+# response = collection.delete_one({"name": "Shruti Gupta"})
+
 # lastinserted_ids = response.inserted_ids
+
+
+# Get the total No number of Documens as per parsed filetr
+count = collection.count_documents({})
 print(count)
+
+
+# print(response)
+
 for el in response:
     print(f'Data : {el}')

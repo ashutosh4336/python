@@ -3,8 +3,8 @@ LEGB
 Local, Enclosing, Global, Built-in
 """
 # Global and Local Scope
-# x = 'global X'
 import builtins
+x = 'global X'
 
 
 def test(z):
@@ -18,6 +18,21 @@ def test(z):
 # Built-in Scope
 
 
-print(dir(builtins))
-m = min([5, 4, 8, 26, 3])
-print(m)
+# print(dir(builtins))
+# m = min([5, 4, 8, 26, 3])
+# print(m)
+
+# Enclosing
+def outer():
+    x = 'Outer X'
+
+    def inner():
+        nonlocal x
+        x = 'inner X'
+        print(x)
+    inner()
+    print(x)
+
+
+outer()
+print(x)

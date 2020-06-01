@@ -1,5 +1,5 @@
 import itertools
-
+import operator
 
 '''
 infinite methods of itertools
@@ -38,15 +38,111 @@ infinite methods of itertools
 # print(dailydata)
 '''
 letters = ['a', 'b', 'c', 'd']
-numbers = [1, 2, 3, 4, 5, 6]
+numbers = [10000, 2, 5, 2, 3, 4, 5, 6, 1]
 names = ['Ashutosh', 'Pinky']
+selctors = [True, False, True, False]
 
 
+# def lessdntwo(n):
+#     if(n < 3):
+#         return True
+#     else:
+#         return False
+
+
+# result = itertools.takewhile(lessdntwo, numbers)
+# result = itertools.dropwhile(lessdntwo, numbers)
+# result = itertools.filterfalse(lessdntwo, numbers)
+# result = filter(lambda x: x > 2, numbers)
+# result = filter(lessdntwo, numbers)
+# result = itertools.compress(letters, selctors)
 # result = itertools.combinations(letters, 2)
 # result = itertools.permutations(letters, 2)
 # result = itertools.product(numbers, repeat=4)
 # result = itertools.combinations_with_replacement(numbers, 4)
-result = itertools.chain(letters, numbers, names)
+# result = itertools.chain(letters, numbers, names)
+# result = itertools.islice(range(10), 6)
+# result = itertools.islice(range(10), 3, 8)
+# result = itertools.islice(range(10), 3, 8, 2)
+# (range(x), starting point, ending point, stepstomove)
 
-for i in result:
-    print(i)
+#
+
+# result = itertools.accumulate(numbers, lambda x, y: x / y)
+# result = itertools.accumulate(numbers, lambda x, y: x * y)
+# result = itertools.accumulate(numbers, operator.mul)
+
+# for i in result:
+#     print(i)
+
+
+# File Example
+# with open('log.log', 'r') as f:
+#     # a = f.read()
+#     header = itertools.islice(f, 3)
+#
+#     for line in header:
+#         print(line, end='')
+
+
+# GROUPBY
+people = [
+    {
+        'name': 'John Doe',
+        'city': 'Gotham',
+        'state': 'NY'
+    },
+    {
+        'name': 'Jane Doe',
+        'city': 'Kings Landing',
+        'state': 'NY'
+    },
+    {
+        'name': 'Corey Schafer',
+        'city': 'Boulder',
+        'state': 'CO'
+    },
+    {
+        'name': 'Al Einstein',
+        'city': 'Denver',
+        'state': 'CO'
+    },
+    {
+        'name': 'John Henry',
+        'city': 'Hinton',
+        'state': 'WV'
+    },
+    {
+        'name': 'Randy Moss',
+        'city': 'Rand',
+        'state': 'WV'
+    },
+    {
+        'name': 'Nicole K',
+        'city': 'Asheville',
+        'state': 'NC'
+    },
+    {
+        'name': 'Jim Doe',
+        'city': 'Charlotte',
+        'state': 'NC'
+    },
+    {
+        'name': 'Jane Taylor',
+        'city': 'Faketown',
+        'state': 'NC'
+    }
+]
+
+
+def getstate(person):
+    return person['state']
+
+
+result = itertools.groupby(people, getstate)
+
+# for key, group in result:
+#     print(f'{key} {len(list(group))}')
+#     for person in group:
+#         print(person)
+#         print('')

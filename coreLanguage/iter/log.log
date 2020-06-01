@@ -1,0 +1,11 @@
+name: = "besider";
+password: = "12345";
+URL: = "passdemo.txt";
+
+
+
+name: = "henry";
+password: = "12345";
+URL: = "passdemo.html";
+
+END_FILE
